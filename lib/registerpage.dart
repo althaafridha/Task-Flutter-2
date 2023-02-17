@@ -43,6 +43,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   hintText: 'Nama Lengkap',
                 ),
               ),
+              const SizedBox(height: 12),
               TextField(
                 obscureText: true,
                 controller: passController,
@@ -54,6 +55,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   hintText: 'Password',
                 ),
               ),
+              const SizedBox(height: 12),
               TextField(
                 controller: mottoController,
                 decoration: const InputDecoration(
@@ -64,6 +66,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   hintText: 'Motto Hidup',
                 ),
               ),
+              const SizedBox(height: 12),
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -91,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 12),
               const Text("Agama: "),
               const SizedBox(height: 10),
               DropdownButton(
@@ -109,6 +112,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       dropdownValue = value!;
                     });
                   }),
+              const SizedBox(height: 12),
               MaterialButton(
                 onPressed: () {
                   checkIfNameIsEmpty();
