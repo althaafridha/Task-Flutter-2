@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -145,7 +143,9 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   void showData() {
-    errorMessage = "";
+    setState(() {
+        errorMessage = "";
+      });
     showDialog(
         context: context,
         builder: (context) {
